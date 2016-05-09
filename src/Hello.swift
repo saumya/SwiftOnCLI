@@ -6,16 +6,24 @@
 
 // Anonymous function
 let _ = {
+	// declare a function
+	func say(message:String) -> Void {
+		print("say : "+message)
+	}
 	// Another Anonymous function
 	{
 		print ("Anonymous : line : 1-1")
 		print ("Anonymous : line : 2-1")
+		say("Hello!")
 	}()
+	//
 	print ("Anonymous : line : 1")
-	print ("Anonymous : line : 2")
-
-	func say(message:String) -> Void {
-		print(message)
-	}
 	say("Hello World !")
+	// Closure
+	func sayHelloTo(name:String) -> () {
+		let h = "Hello ! "
+		let s = h+name
+		print(s)
+	}
+	sayHelloTo("Saumya")
 }()
