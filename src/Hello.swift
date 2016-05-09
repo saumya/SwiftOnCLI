@@ -2,7 +2,15 @@
 // compile 	: swiftc Hello.swift -o hello
 // run 		: ./hello
 //
-func say(message:String) -> Void {
-	print(message)
-}
-say("Hello World !")
+
+
+// Anonymous function
+let _ = {
+	print ("Anonymous : line : 1")
+	print ("Anonymous : line : 2")
+
+	func say(message:String) -> Void {
+		print(message)
+	}
+	say("Hello World !")
+}()
