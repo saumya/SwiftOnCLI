@@ -28,6 +28,6 @@ let _ = {
 	}
 	sayHelloTo("Saumya")
 	//
-	//let o1:One = One()
+	//var o1:One = One()
 	//o1.getName();
 }()
