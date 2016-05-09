@@ -3,6 +3,7 @@
 // run 		: ./hello
 //
 
+//import ./One
 
 // Anonymous function
 let _ = {
@@ -26,4 +27,7 @@ let _ = {
 		print(s)
 	}
 	sayHelloTo("Saumya")
+	//
+	//let o1:One = One()
+	//o1.getName();
 }()
